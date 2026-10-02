@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politika zasebnosti — Swarmline</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0 auto; padding: 32px 20px 96px; max-width: 46rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #1a1a1a; background: #ffffff;
+  }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 8px; border-top: 2px solid #e6e4e4; padding-top: 16px; }
+  h3 { font-size: 1rem; margin: 24px 0 4px; }
+  .meta { color: #5f5c5c; font-size: 0.9rem; margin: 0 0 32px; }
+  ul { padding-inline-start: 1.2rem; }
+  li { margin: 4px 0; }
+  a { color: #c4341a; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.94rem; }
+  th, td { text-align: start; padding: 8px 10px; border-bottom: 1px solid #e6e4e4; vertical-align: top; }
+  th { background: #f6f5f5; font-weight: 600; }
+  .nota { background: #f6f5f5; border-inline-start: 3px solid #c4341a; padding: 12px 14px; margin: 16px 0; }
+  .langs { font-size: 0.85rem; line-height: 2; margin: 0 0 28px; padding-bottom: 12px; border-bottom: 1px solid #e6e4e4; }
+  .langs a, .langs strong { margin-inline-end: 12px; white-space: nowrap; }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 2px solid #e6e4e4; color: #5f5c5c; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<!--LANGBAR-->
+<nav class="langs" aria-label="Languages">
+  <a href="privacy-bg.html" hreflang="bg" lang="bg">Български</a>
+  <a href="privacy-cs.html" hreflang="cs" lang="cs">Čeština</a>
+  <a href="privacy-da.html" hreflang="da" lang="da">Dansk</a>
+  <a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a>
+  <a href="privacy-el.html" hreflang="el" lang="el">Ελληνικά</a>
+  <a href="privacy-en.html" hreflang="en" lang="en">English</a>
+  <a href="privacidad.html" hreflang="es" lang="es">Español</a>
+  <a href="privacy-et.html" hreflang="et" lang="et">Eesti</a>
+  <a href="privacy-fi.html" hreflang="fi" lang="fi">Suomi</a>
+  <a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a>
+  <a href="privacy-ga.html" hreflang="ga" lang="ga">Gaeilge</a>
+  <a href="privacy-hr.html" hreflang="hr" lang="hr">Hrvatski</a>
+  <a href="privacy-hu.html" hreflang="hu" lang="hu">Magyar</a>
+  <a href="privacy-it.html" hreflang="it" lang="it">Italiano</a>
+  <a href="privacy-lt.html" hreflang="lt" lang="lt">Lietuvių</a>
+  <a href="privacy-lv.html" hreflang="lv" lang="lv">Latviešu</a>
+  <a href="privacy-mt.html" hreflang="mt" lang="mt">Malti</a>
+  <a href="privacy-nl.html" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="privacy-pl.html" hreflang="pl" lang="pl">Polski</a>
+  <a href="privacy-pt.html" hreflang="pt" lang="pt">Português</a>
+  <a href="privacy-ro.html" hreflang="ro" lang="ro">Română</a>
+  <a href="privacy-sk.html" hreflang="sk" lang="sk">Slovenčina</a>
+  <strong lang="sl">Slovenščina</strong>
+  <a href="privacy-sv.html" hreflang="sv" lang="sv">Svenska</a>
+  <a href="privacy-nb.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+  <a href="privacy-is.html" hreflang="is" lang="is">Íslenska</a>
+  <a href="privacy-pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+  <a href="privacy-ru.html" hreflang="ru" lang="ru">Русский</a>
+  <a href="privacy-uk.html" hreflang="uk" lang="uk">Українська</a>
+  <a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a>
+  <a href="privacy-ja.html" hreflang="ja" lang="ja">日本語</a>
+  <a href="privacy-ko.html" hreflang="ko" lang="ko">한국어</a>
+  <a href="privacy-zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+  <a href="privacy-zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+  <a href="privacy-id.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+  <a href="privacy-vi.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+  <a href="privacy-ms.html" hreflang="ms" lang="ms">Bahasa Melayu</a>
+  <a href="privacy-fil.html" hreflang="fil" lang="fil">Filipino</a>
+  <a href="privacy-th.html" hreflang="th" lang="th">ไทย</a>
+  <a href="privacy-hi.html" hreflang="hi" lang="hi">हिन्दी</a>
+  <a href="privacy-ar.html" hreflang="ar" lang="ar">العربية</a>
+  <a href="privacy-he.html" hreflang="he" lang="he">עברית</a>
+</nav>
+<!--/LANGBAR-->
+
+<h1>Politika zasebnosti aplikacije Swarmline</h1>
+<p class="meta">
+  Aplikacija: <strong>Swarmline</strong> (<code>io.swarmline.game</code>)<br>
+  Upravljavec: <strong>Raúl Garrido</strong><br>
+  Stik: <strong>sakepalace.apps@gmail.com</strong><br>
+  Zadnja posodobitev: <strong>1. oktober 2026</strong>
+</p>
+
+<p>Ta politika pojasnjuje, katere podatke Swarmline obdeluje, za kakšen namen, s kom se delijo in
+katere pravice imate v zvezi z njimi.</p>
+
+<h2>1. Povzetek</h2>
+<div class="nota">
+  <ul>
+    <li>Swarmline je mogoče v celoti igrati <strong>brez računa, brez registracije in brez povezave</strong>. Vaš
+      napredek se shranjuje v vaši napravi.</li>
+    <li>Igra prikazuje <strong>samo nagrajene oglase</strong> (Google AdMob): oglas se
+      prikaže le, kadar se sami odločite, da si ga ogledate v zameno za ugodnost.</li>
+    <li>Če je v vaši napravi profil storitve <strong>Igre Google Play</strong>, se igra z njim
+      prijavi, da shranjuje vaš napredek v oblaku, ter za <strong>lestvice in
+      prijatelje</strong>. V tem primeru so vaše ime igralca in vaši rezultati vidni
+      drugim igralcem.</li>
+    <li>Swarmline <strong>ne vsebuje nakupov v aplikaciji</strong> niti analitičnih orodij,
+      razvijalec pa ne prodaja osebnih podatkov.</li>
+  </ul>
+</div>
+
+<h2>2. Podatki, ki se obdelujejo</h2>
+
+<h3>2.1 Napredek v igri (v napravi)</h3>
+<p>Aplikacija v svoji zasebni shrambi v vaši napravi hrani informacije, ki jih igra potrebuje,
+da si zapomni vaš napredek: odklenjene ladje, orožja, sisteme in module,
+valuto v igri, rekorde, nastavitve (upravljanje, zvok, jezik, barvna paleta) in igro v teku,
+če jo prekinete pred koncem.</p>
+<ul>
+  <li>Te informacije ne vsebujejo vašega pravega imena, e-poštnega naslova ali telefonske številke.</li>
+  <li>Izbrišejo se, ko aplikacijo odstranite ali počistite njene podatke v sistemskih nastavitvah.</li>
+</ul>
+<p>Dnevni izziv uporablja seme, izpeljano iz datuma, ki se izračuna v sami napravi.</p>
+
+<h3>2.2 Nagrajeni oglasi (Google AdMob)</h3>
+<p>Oglaševanje je <strong>izključno nagrajeno</strong>: oglas se prikaže le, ko
+pritisnete gumb, ki to navaja, v zameno za ugodnost v igri. Ni obveznih oglasov,
+celozaslonskih oglasov med igrami in ne pasic. Ponudnik je
+<strong>Google AdMob</strong>, katerega komponenta v aplikaciji se poveže z Googlom, da
+pripravi in prikaže oglase, in lahko obdeluje naslednje podatke:</p>
+<table>
+  <tr><th>Podatek</th><th>Namen</th></tr>
+  <tr><td>Oglaševalski identifikator naprave</td><td>Izbira in merjenje oglasov, omejevanje pogostosti prikazovanja in preprečevanje goljufij</td></tr>
+  <tr><td>Tehnični podatki o napravi (model, operacijski sistem, jezik, naslov IP in iz njega izpeljana približna država)</td><td>Združljivost oglasne oblike, lokalizacija oglasa in varnost</td></tr>
+  <tr><td>Interakcija z oglasom (prikazi, dokončani ogledi) in diagnostični podatki oglaševalske komponente</td><td>Merjenje, obračunavanje in odpravljanje napak</td></tr>
+</table>
+<p>V Evropskem gospodarskem prostoru, Združenem kraljestvu in Švici vas igra pred vklopom oglaševanja
+prosi za <strong>privolitev</strong> prek Googlovega obrazca (User Messaging Platform),
+ki jo lahko kadar koli pregledate in prekličete v
+<strong>NASTAVITVE &gt; ZASEBNOST</strong> v igri. Če je ne date, prikazani oglasi
+ne bodo prilagojeni ali pa se ne bo prikazal noben; kadar ni oglasa za prikaz,
+igra ugodnost vseeno dodeli. Pravna podlaga za to obdelavo je privolitev
+(člen 6(1)(a) Splošne uredbe o varstvu podatkov, GDPR). V zveznih državah ZDA z lastnimi zakoni o
+zasebnosti vam isti obrazec omogoča, da ugovarjate prodaji ali deljenju svojih podatkov za oglaševalske namene.
+Kako Google uporablja oglaševalske podatke, si lahko preberete na
+<a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">policies.google.com/technologies/ads</a>.</p>
+<p>Ne glede na privolitev vam naprava Android omogoča ponastavitev ali izbris
+oglaševalskega identifikatorja v meniju Nastavitve &gt; Zasebnost &gt; Oglasi.</p>
+
+<h3>2.3 Igre Google Play: prijava in shranjevanje v oblaku</h3>
+<p>Če je v vaši napravi profil storitve Igre Google Play, se igra z njim prijavi ob zagonu
+(ali ko pritisnete PRIJAVA na zaslonu lestvic). Ko ste prijavljeni:</p>
+<ul>
+  <li>igra od Googla prejme vaš <strong>identifikator igralca</strong> in vaše <strong>ime
+    igralca</strong> v storitvi Igre Play (ne prejme vašega e-poštnega naslova ali pravega imena);</li>
+  <li>vaš napredek (iz razdelka 2.1) se shrani v <strong>Shranjene igre</strong> v vašem
+    računu Google, da potuje med vašimi napravami.</li>
+</ul>
+<p>To obdelavo izvaja Google v skladu z
+<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Googlovim pravilnikom o zasebnosti</a>.
+Samodejno prijavo lahko izklopite, prekinete povezavo igre s svojim računom ali izbrišete
+shranjene podatke igre v nastavitvah storitve Igre Google Play. Brez prijave je igra še vedno
+v celoti igralna in nič iz tega ali naslednjega razdelka se ne uporablja.</p>
+
+<h3 id="clasificaciones">2.4 Lestvice, ime igralca in prijatelji</h3>
+<p>Lestvice, prikazana imena in prijateljstva v igri se hranijo v razvijalčevi lastni zbirki
+podatkov, ki jo v Evropski uniji gosti <strong>Supabase</strong>
+(Supabase, Inc.), ki deluje kot obdelovalec. Samo če ste prijavljeni
+(razdelek 2.3), igra tja pošlje in shrani:</p>
+<table>
+  <tr><th>Podatek</th><th>Namen</th></tr>
+  <tr><td>Vaš identifikator igralca v storitvi Igre Play</td><td>Razlikovanje vaših rezultatov od rezultatov drugih. Je tudi vaša <strong>koda prijatelja</strong></td></tr>
+  <tr><td>Vaše ime igralca: tisto iz storitve Igre Play ali, če želite, lastno ime, ki ga vpišete v igri (od 3 do 15 črk, številk ali podčrtajev, brez žaljivih besed)</td><td>Vaš prikaz na lestvicah in v prošnjah za prijateljstvo</td></tr>
+  <tr><td>Vaš najboljši rezultat vsakega dne (število uničenih sovražnikov in dosežena raven) v dnevnem izzivu in v običajnih igrah, z datumom</td><td>Dnevne lestvice, lestvica vseh časov in vaša uvrstitev med drugimi igralci</td></tr>
+  <tr><td>Vaša prijateljstva in prošnje za prijateljstvo, ki jih pošljete ali prejmete</td><td>Seznam prijateljev in lestvice med prijatelji</td></tr>
+</table>
+<p><strong>Vaše ime igralca, vaš rezultat in vaša raven so vidni vsakemu drugemu
+igralcu</strong> na lestvicah, vsak igralec pa vam lahko z njih pošlje prošnjo za
+prijateljstvo, ki jo po lastni odločitvi sprejmete ali zavrnete. Vaša koda prijatelja se zunaj
+igre deli le, če se jo odločite kopirati ali poslati. Aplikacija ne dostopa do vašega seznama prijateljev
+v storitvi Igre Google Play in vas ne prosi za nobeno drugo besedilo.</p>
+<p>Kot pri vsaki internetni storitvi strežniki zaradi varnosti tehnično in začasno zabeležijo
+naslov IP, s katerega se igra povezuje. Pravna podlaga za to obdelavo
+je zagotavljanje spletnih funkcij igre, ki jih uporabljate (člen 6(1)(b) GDPR).
+Igre, odigrane brez prijave, v to zbirko podatkov ne pošiljajo ničesar.</p>
+
+<h3>2.5 Distribucija prek storitve Google Play</h3>
+<p>Prenos, namestitev in, kjer je ustrezno, sodelovanje v preizkusnih programih upravlja
+Google Play, ki obdeluje podatke v skladu z lastnimi pravilniki. Glejte
+<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Googlov pravilnik o zasebnosti</a>.</p>
+
+<h3>2.6 Sistemska poročila o zrušitvah</h3>
+<p>Če imate v nastavitvah naprave Android vklopljeno pošiljanje diagnostičnih podatkov, lahko
+operacijski sistem Googlu pošilja poročila o zrušitvah in napakah aplikacije.
+Razvijalec do njih dostopa samo v <strong>združeni in anonimni</strong> obliki prek
+konzole Google Play, brez možnosti identifikacije katerega koli uporabnika. Aplikacija ne vključuje
+nobenega lastnega orodja za analitiko ali poročanje o zrušitvah. To pošiljanje lahko izklopite v
+nastavitvah naprave.</p>
+
+<h2>3. Storitve, načrtovane v prihodnjih različicah</h2>
+<p>Načrtovano je, da se bodo v storitvi Igre Google Play prikazovali <strong>dosežki</strong>, ki jih je že
+zdaj mogoče pridobiti z igranjem. Če bo to dodano, bo Google te dosežke obdeloval v povezavi z vašim profilom
+v storitvi Igre Play, ta politika pa bo posodobljena, skupaj z datumom, pred objavo nove različice.</p>
+
+<h2>4. S kom se delijo podatki</h2>
+<p>Razvijalec osebnih podatkov ne prodaja, ne daje v najem in ne posreduje tretjim osebam. Opisane podatke
+obdelujejo izključno:</p>
+<ul>
+  <li><strong>Google</strong> (AdMob, Igre Google Play in Google Play), kot upravljavec ali obdelovalec,
+    odvisno od primera, v skladu s pravilniki, do katerih vodijo povezave v posameznih razdelkih;</li>
+  <li><strong>Supabase</strong>, kot obdelovalec, ki gosti zbirko podatkov
+    lestvic, imen in prijateljstev (razdelek 2.4);</li>
+  <li><strong>drugi igralci</strong>, ki na lestvicah vidijo vaše ime igralca, vaš rezultat in vašo
+    raven.</li>
+</ul>
+
+<h2>5. Mednarodni prenosi</h2>
+<p>Zbirka podatkov lestvic gostuje v Evropski uniji. Google in Supabase lahko podatke
+obdelujeta na strežnikih zunaj Evropskega gospodarskega prostora, na podlagi sklepov
+Evropske komisije o ustreznosti ali standardnih pogodbenih klavzul.</p>
+
+<h2>6. Hramba</h2>
+<p>Napredek v igri ostane v vaši napravi, dokler je aplikacija nameščena, in se izbriše,
+ko jo odstranite; njegova kopija v oblaku ostane v vašem računu Google, dokler je ne izbrišete v
+storitvi Igre Google Play. Vaše ime igralca, vaši rezultati in vaša prijateljstva se hranijo, dokler
+so lestvice dejavne ali dokler ne zahtevate njihovega izbrisa (razdelek 8). Podatki, ki jih obdeluje
+Google, se hranijo za obdobja, navedena v njegovih pravilnikih.</p>
+
+<h2>7. Mladoletniki</h2>
+<p>Swarmline je namenjen osebam, starim <strong>13 let ali več</strong>, in zavestno ne zbira
+podatkov oseb, mlajših od te starosti. Če ugotovite, da je oseba, mlajša od 13 let, prek aplikacije
+posredovala osebne podatke, pišite na kontaktni naslov, da se izbrišejo.</p>
+
+<h2 id="borrado">8. Vaše pravice in kako izbrisati podatke</h2>
+<p>Uveljavljate lahko pravice do dostopa, popravka, izbrisa, omejitve obdelave, ugovora in
+prenosljivosti podatkov ter kadar koli prekličete svojo privolitev.</p>
+<ul>
+  <li><strong>Ime igralca:</strong> kadar koli ga lahko spremenite na zaslonu
+    lestvic v igri (PRIJATELJI &gt; SPREMENI).</li>
+  <li><strong>Prijateljstva:</strong> odstranite, zavrnete ali prekličete jih na istem zaslonu.</li>
+  <li><strong>Rezultati, ime in prijateljstva, shranjeni na lestvicah:</strong> pišite na
+    <strong>sakepalace.apps@gmail.com</strong> in navedite svojo kodo prijatelja (prikazana je na zaslonu
+    lestvic), podatki pa bodo izbrisani najpozneje v 30 dneh. Igre vam ni treba ohraniti
+    nameščene.</li>
+  <li><strong>Napredek v oblaku in prijava:</strong> izbrišeta se ali odklopita v nastavitvah
+    storitve Igre Google Play.</li>
+  <li><strong>Oglaševanje:</strong> preglejte ali prekličite privolitev v NASTAVITVE &gt; ZASEBNOST v
+    igri ter ponastavite ali izbrišite oglaševalski identifikator v nastavitvah sistema Android.</li>
+  <li><strong>Podatki v napravi:</strong> odstranijo se z brisanjem podatkov aplikacije ali
+    z njeno odstranitvijo.</li>
+</ul>
+<p>Če menite, da obdelava ni v skladu s predpisi, lahko vložite pritožbo
+pri španski agenciji za varstvo podatkov
+(<a href="https://www.aepd.es" rel="noopener" target="_blank">www.aepd.es</a>) ali pri nadzornem
+organu v državi svojega prebivališča.</p>
+
+<h2>9. Prebivalci Kalifornije</h2>
+<p>Če prebivate v Kaliforniji, vam CCPA priznava pravico vedeti, katere osebne informacije se
+zbirajo, zahtevati njihov izbris, jih popraviti in ne biti diskriminirani zaradi uveljavljanja teh
+pravic. <strong>Razvijalec ne prodaja osebnih informacij.</strong> Uporaba oglaševalskega
+identifikatorja s strani storitve Google AdMob se lahko po CCPA šteje za »deljenje« za oglaševalske
+namene; temu lahko ugovarjate v NASTAVITVE &gt; ZASEBNOST v igri. Za preostale
+pravice pišite na zgoraj navedeni kontaktni naslov.</p>
+
+<h2>10. Varnost</h2>
+<p>Podatki igre so v zasebni shrambi, ki jo operacijski sistem rezervira za
+aplikacijo in je ločena od drugih aplikacij. Vsa komunikacija igre poteka šifrirano
+(HTTPS). Zbirka podatkov lestvic ne dopušča neposrednega branja ali pisanja: igra lahko
+uporablja le določene operacije, ki jih potrebuje, in v njej se ne hrani noben e-poštni naslov, geslo
+ali pravo ime.</p>
+
+<h2>11. Spremembe te politike</h2>
+<p>Vsaka sprememba bo objavljena na tem istem naslovu, s posodobljenim datumom v glavi.
+Če sprememba vpliva na podatke, ki se zbirajo, bo objavljena v aplikaciji, in kadar
+predpisi to zahtevajo, boste znova zaprošeni za privolitev.</p>
+<p>Ta politika je objavljena v uradnih jezikih Evropske unije. Španska različica je
+izvirnik; če se kateri koli prevod od nje razlikuje, prevlada španska različica.</p>
+
+<footer>
+  Swarmline — <code>io.swarmline.game</code><br>
+  Stik: sakepalace.apps@gmail.com
+</footer>
+
+</body>
+</html>

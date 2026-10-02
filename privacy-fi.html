@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tietosuojakäytäntö — Swarmline</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0 auto; padding: 32px 20px 96px; max-width: 46rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #1a1a1a; background: #ffffff;
+  }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 8px; border-top: 2px solid #e6e4e4; padding-top: 16px; }
+  h3 { font-size: 1rem; margin: 24px 0 4px; }
+  .meta { color: #5f5c5c; font-size: 0.9rem; margin: 0 0 32px; }
+  ul { padding-inline-start: 1.2rem; }
+  li { margin: 4px 0; }
+  a { color: #c4341a; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.94rem; }
+  th, td { text-align: start; padding: 8px 10px; border-bottom: 1px solid #e6e4e4; vertical-align: top; }
+  th { background: #f6f5f5; font-weight: 600; }
+  .nota { background: #f6f5f5; border-inline-start: 3px solid #c4341a; padding: 12px 14px; margin: 16px 0; }
+  .langs { font-size: 0.85rem; line-height: 2; margin: 0 0 28px; padding-bottom: 12px; border-bottom: 1px solid #e6e4e4; }
+  .langs a, .langs strong { margin-inline-end: 12px; white-space: nowrap; }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 2px solid #e6e4e4; color: #5f5c5c; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<!--LANGBAR-->
+<nav class="langs" aria-label="Languages">
+  <a href="privacy-bg.html" hreflang="bg" lang="bg">Български</a>
+  <a href="privacy-cs.html" hreflang="cs" lang="cs">Čeština</a>
+  <a href="privacy-da.html" hreflang="da" lang="da">Dansk</a>
+  <a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a>
+  <a href="privacy-el.html" hreflang="el" lang="el">Ελληνικά</a>
+  <a href="privacy-en.html" hreflang="en" lang="en">English</a>
+  <a href="privacidad.html" hreflang="es" lang="es">Español</a>
+  <a href="privacy-et.html" hreflang="et" lang="et">Eesti</a>
+  <strong lang="fi">Suomi</strong>
+  <a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a>
+  <a href="privacy-ga.html" hreflang="ga" lang="ga">Gaeilge</a>
+  <a href="privacy-hr.html" hreflang="hr" lang="hr">Hrvatski</a>
+  <a href="privacy-hu.html" hreflang="hu" lang="hu">Magyar</a>
+  <a href="privacy-it.html" hreflang="it" lang="it">Italiano</a>
+  <a href="privacy-lt.html" hreflang="lt" lang="lt">Lietuvių</a>
+  <a href="privacy-lv.html" hreflang="lv" lang="lv">Latviešu</a>
+  <a href="privacy-mt.html" hreflang="mt" lang="mt">Malti</a>
+  <a href="privacy-nl.html" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="privacy-pl.html" hreflang="pl" lang="pl">Polski</a>
+  <a href="privacy-pt.html" hreflang="pt" lang="pt">Português</a>
+  <a href="privacy-ro.html" hreflang="ro" lang="ro">Română</a>
+  <a href="privacy-sk.html" hreflang="sk" lang="sk">Slovenčina</a>
+  <a href="privacy-sl.html" hreflang="sl" lang="sl">Slovenščina</a>
+  <a href="privacy-sv.html" hreflang="sv" lang="sv">Svenska</a>
+  <a href="privacy-nb.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+  <a href="privacy-is.html" hreflang="is" lang="is">Íslenska</a>
+  <a href="privacy-pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+  <a href="privacy-ru.html" hreflang="ru" lang="ru">Русский</a>
+  <a href="privacy-uk.html" hreflang="uk" lang="uk">Українська</a>
+  <a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a>
+  <a href="privacy-ja.html" hreflang="ja" lang="ja">日本語</a>
+  <a href="privacy-ko.html" hreflang="ko" lang="ko">한국어</a>
+  <a href="privacy-zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+  <a href="privacy-zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+  <a href="privacy-id.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+  <a href="privacy-vi.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+  <a href="privacy-ms.html" hreflang="ms" lang="ms">Bahasa Melayu</a>
+  <a href="privacy-fil.html" hreflang="fil" lang="fil">Filipino</a>
+  <a href="privacy-th.html" hreflang="th" lang="th">ไทย</a>
+  <a href="privacy-hi.html" hreflang="hi" lang="hi">हिन्दी</a>
+  <a href="privacy-ar.html" hreflang="ar" lang="ar">العربية</a>
+  <a href="privacy-he.html" hreflang="he" lang="he">עברית</a>
+</nav>
+<!--/LANGBAR-->
+
+<h1>Swarmlinen tietosuojakäytäntö</h1>
+<p class="meta">
+  Sovellus: <strong>Swarmline</strong> (<code>io.swarmline.game</code>)<br>
+  Rekisterinpitäjä: <strong>Raúl Garrido</strong><br>
+  Yhteystiedot: <strong>sakepalace.apps@gmail.com</strong><br>
+  Päivitetty viimeksi: <strong>1. lokakuuta 2026</strong>
+</p>
+
+<p>Tässä tietosuojakäytännössä kerrotaan, mitä tietoja Swarmline käsittelee, mihin tarkoitukseen,
+kenelle niitä luovutetaan ja mitä oikeuksia sinulla on niihin.</p>
+
+<h2>1. Yhteenveto</h2>
+<div class="nota">
+  <ul>
+    <li>Swarmlinea voi pelata kokonaan <strong>ilman tiliä, rekisteröitymistä ja verkkoyhteyttä</strong>.
+      Edistymisesi tallennetaan laitteellesi.</li>
+    <li>Pelissä näytetään <strong>ainoastaan palkitsevia mainoksia</strong> (Google AdMob): mainos
+      näytetään vain silloin, kun itse päätät katsoa sen jotakin etua vastaan.</li>
+    <li>Jos laitteessasi on <strong>Google Play Pelit</strong> -profiili, peli kirjautuu sillä
+      sisään tallentaakseen edistymisesi pilveen sekä <strong>tulostaulukoita ja
+      kavereita</strong> varten. Tällöin pelaajanimesi ja pisteesi näkyvät muille
+      pelaajille.</li>
+    <li>Swarmline <strong>ei sisällä sovelluksen sisäisiä ostoja</strong> eikä analytiikkatyökaluja,
+      eikä kehittäjä myy henkilötietoja.</li>
+  </ul>
+</div>
+
+<h2>2. Käsiteltävät tiedot</h2>
+
+<h3>2.1 Pelin edistyminen (laitteessa)</h3>
+<p>Sovellus tallentaa laitteessasi olevaan yksityiseen tallennustilaansa tiedot, joita peli
+tarvitsee muistaakseen edistymisesi: avatut alukset, aseet, järjestelmät ja moduulit, pelin
+sisäisen valuutan, ennätykset, asetukset (ohjaus, äänet, kieli, väripaletti) sekä meneillään olevan
+pelikerran, jos jätät sen kesken.</p>
+<ul>
+  <li>Nämä tiedot eivät sisällä oikeaa nimeäsi, sähköpostiosoitettasi eivätkä puhelinnumeroasi.</li>
+  <li>Ne poistetaan, kun poistat sovelluksen tai tyhjennät sen tiedot järjestelmän asetuksista.</li>
+</ul>
+<p>Päivittäinen haaste käyttää päivämäärästä johdettua siemenlukua, joka lasketaan laitteessa itsessään.</p>
+
+<h3>2.2 Palkitsevat mainokset (Google AdMob)</h3>
+<p>Mainonta on <strong>yksinomaan palkitsevaa</strong>: mainos näytetään vain, kun painat
+painiketta, jossa siitä kerrotaan, ja saat vastineeksi edun pelissä. Pelissä ei ole pakollisia
+mainoksia, pelikertojen välissä näytettäviä koko näytön mainoksia eikä bannereita. Palveluntarjoaja on
+<strong>Google AdMob</strong>, jonka sovellukseen sisältyvä komponentti muodostaa yhteyden Googleen
+mainosten valmistelemiseksi ja näyttämiseksi ja voi käsitellä seuraavia tietoja:</p>
+<table>
+  <tr><th>Tieto</th><th>Käyttötarkoitus</th></tr>
+  <tr><td>Laitteen mainostunnus</td><td>Mainosten valinta ja mittaaminen, näyttötiheyden rajoittaminen ja petosten torjunta</td></tr>
+  <tr><td>Laitteen tekniset tiedot (malli, käyttöjärjestelmä, kieli, IP-osoite ja siitä johdettu likimääräinen maa)</td><td>Mainosmuodon yhteensopivuus, mainoksen lokalisointi ja turvallisuus</td></tr>
+  <tr><td>Vuorovaikutus mainoksen kanssa (näyttökerrat, loppuun katsotut mainokset) sekä mainoskomponentin diagnostiikkatiedot</td><td>Mittaaminen, laskutus ja virheiden korjaaminen</td></tr>
+</table>
+<p>Euroopan talousalueella, Yhdistyneessä kuningaskunnassa ja Sveitsissä peli pyytää
+<strong>suostumuksesi</strong> Googlen lomakkeella (User Messaging Platform) ennen mainonnan
+käyttöönottoa, ja voit tarkistaa suostumuksesi ja peruuttaa sen milloin tahansa pelin kohdassa
+<strong>ASETUKSET &gt; TIETOSUOJA</strong>. Jos et anna suostumusta, näytettävät mainokset eivät ole
+personoituja tai mainoksia ei näytetä lainkaan; kun näytettävää mainosta ei ole, peli myöntää edun
+silti. Tämän käsittelyn oikeusperuste on suostumus (EU:n yleisen tietosuoja-asetuksen (GDPR)
+6 artiklan 1 kohdan a alakohta). Niissä Yhdysvaltojen osavaltioissa, joilla on omat
+tietosuojalakinsa, voit samalla lomakkeella kieltää tietojesi myynnin tai jakamisen
+mainontatarkoituksiin. Siihen, miten Google käyttää mainontatietoja, voit tutustua osoitteessa
+<a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">policies.google.com/technologies/ads</a>.</p>
+<p>Suostumuksesta riippumatta voit Android-laitteessasi nollata tai poistaa mainostunnuksen
+kohdassa Asetukset &gt; Tietosuoja &gt; Mainokset.</p>
+
+<h3>2.3 Google Play Pelit: kirjautuminen ja pilvitallennus</h3>
+<p>Jos laitteessasi on Google Play Pelit -profiili, peli kirjautuu sillä sisään käynnistyessään
+(tai kun painat tulostaulukkonäkymässä KIRJAUDU). Kun olet kirjautunut sisään:</p>
+<ul>
+  <li>peli saa Googlelta Play Pelit -palvelun <strong>pelaajatunnuksesi</strong> ja
+    <strong>pelaajanimesi</strong> (se ei saa sähköpostiosoitettasi eikä oikeaa nimeäsi);</li>
+  <li>edistymisesi (kohdassa 2.1 tarkoitettu) tallennetaan Google-tilillesi <strong>Saved Games</strong>
+    -ominaisuuteen, jotta se kulkee mukanasi laitteelta toiselle.</li>
+</ul>
+<p>Tämän käsittelyn suorittaa Google
+<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Googlen tietosuojakäytännön</a> mukaisesti.
+Voit poistaa automaattisen sisäänkirjautumisen käytöstä, poistaa pelin ja tilisi välisen yhteyden
+tai poistaa tallennetut pelitietosi Google Play Pelien asetuksista. Ilman kirjautumista peliä voi
+edelleen pelata täysin, eikä mitään tässä tai seuraavassa kohdassa kuvattua sovelleta.</p>
+
+<h3 id="clasificaciones">2.4 Tulostaulukot, pelaajanimi ja kaverit</h3>
+<p>Pelin tulostaulukot, näytettävät nimet ja kaverisuhteet tallennetaan kehittäjän omaan
+tietokantaan, jota ylläpitää Euroopan unionissa <strong>Supabase</strong>
+(Supabase, Inc.) henkilötietojen käsittelijänä. Peli lähettää ja tallentaa sinne seuraavat tiedot
+vain, jos olet kirjautunut sisään (kohta 2.3):</p>
+<table>
+  <tr><th>Tieto</th><th>Käyttötarkoitus</th></tr>
+  <tr><td>Play Pelit -palvelun pelaajatunnuksesi</td><td>Pisteidesi erottaminen muiden pisteistä. Se on myös <strong>kaverikoodisi</strong></td></tr>
+  <tr><td>Pelaajanimesi: Play Pelit -palvelun nimi tai halutessasi oma nimi, jonka kirjoitat pelissä (3–15 kirjainta, numeroa tai alaviivaa, ei loukkaavia sanoja)</td><td>Näyttämisesi tulostaulukoissa ja kaveripyynnöissä</td></tr>
+  <tr><td>Kunkin päivän paras tuloksesi (tuhotut viholliset ja saavutettu taso) päivittäisessä haasteessa ja tavallisissa pelikerroissa päivämäärineen</td><td>Päivän tulostaulukot, kaikkien aikojen tulostaulukko ja sijoituksesi muiden pelaajien joukossa</td></tr>
+  <tr><td>Kaverisuhteesi sekä lähettämäsi ja vastaanottamasi kaveripyynnöt</td><td>Kaveriluettelo ja kavereiden väliset tulostaulukot</td></tr>
+</table>
+<p><strong>Pelaajanimesi, pisteesi ja tasosi näkyvät tulostaulukoissa kaikille muille
+pelaajille</strong>, ja kuka tahansa pelaaja voi lähettää sinulle niistä kaveripyynnön, jonka
+hyväksymisestä tai hylkäämisestä päätät itse. Kaverikoodisi jaetaan pelin ulkopuolelle vain, jos
+itse päätät kopioida tai lähettää sen. Sovellus ei käytä Google Play Pelien kaveriluetteloasi
+eikä pyydä sinulta mitään muuta tekstiä.</p>
+<p>Kuten missä tahansa internetpalvelussa, palvelimet kirjaavat turvallisuussyistä teknisesti ja
+tilapäisesti IP-osoitteen, josta peli muodostaa yhteyden. Tämän käsittelyn oikeusperuste on
+käyttämiesi pelin verkkotoimintojen tarjoaminen (yleisen tietosuoja-asetuksen 6 artiklan 1 kohdan
+b alakohta). Ilman kirjautumista pelatut pelikerrat eivät lähetä tähän tietokantaan mitään.</p>
+
+<h3>2.5 Jakelu Google Playn kautta</h3>
+<p>Lataamisesta, asentamisesta ja mahdollisesta testausohjelmiin osallistumisesta huolehtii
+Google Play, joka käsittelee tietoja omien käytäntöjensä mukaisesti. Lisätietoja on
+<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Googlen tietosuojakäytännössä</a>.</p>
+
+<h3>2.6 Järjestelmän kaatumisraportit</h3>
+<p>Jos olet ottanut diagnostiikkatietojen lähettämisen käyttöön Android-laitteesi asetuksissa,
+käyttöjärjestelmä voi lähettää Googlelle raportteja sovelluksen kaatumisista ja virheistä.
+Kehittäjä näkee ne ainoastaan <strong>koostetussa ja anonyymissä</strong> muodossa Google Playn
+hallintapaneelin kautta, eikä yksittäistä käyttäjää ole mahdollista tunnistaa. Sovellus ei sisällä
+mitään omaa analytiikka- tai kaatumisraportointityökalua. Voit poistaa tämän lähettämisen käytöstä
+laitteesi asetuksista.</p>
+
+<h2>3. Tuleviin versioihin suunnitellut palvelut</h2>
+<p>Suunnitelmissa on tuoda Google Play Peleihin näkyviin ne <strong>saavutukset</strong>, joita
+pelaamalla jo ansaitaan. Jos ominaisuus otetaan käyttöön, Google käsittelee näitä saavutuksia Play Pelit
+-profiiliisi liitettyinä, ja tämä tietosuojakäytäntö päivitetään päivämäärineen ennen uuden version julkaisemista.</p>
+
+<h2>4. Kenelle tietoja luovutetaan</h2>
+<p>Kehittäjä ei myy, vuokraa eikä luovuta henkilötietoja kolmansille osapuolille. Kuvattuja tietoja
+käsittelevät ainoastaan:</p>
+<ul>
+  <li><strong>Google</strong> (AdMob, Google Play Pelit ja Google Play) tapauksesta riippuen
+    rekisterinpitäjänä tai henkilötietojen käsittelijänä kussakin kohdassa linkitettyjen käytäntöjen mukaisesti;</li>
+  <li><strong>Supabase</strong> henkilötietojen käsittelijänä, joka ylläpitää tulostaulukoiden,
+    nimien ja kaverisuhteiden tietokantaa (kohta 2.4);</li>
+  <li><strong>muut pelaajat</strong>, jotka näkevät pelaajanimesi, pisteesi ja tasosi
+    tulostaulukoissa.</li>
+</ul>
+
+<h2>5. Kansainväliset tiedonsiirrot</h2>
+<p>Tulostaulukoiden tietokanta sijaitsee Euroopan unionissa. Google ja Supabase voivat käsitellä
+tietoja Euroopan talousalueen ulkopuolella sijaitsevilla palvelimilla Euroopan komission tietosuojan
+riittävyyttä koskevien päätösten tai vakiosopimuslausekkeiden nojalla.</p>
+
+<h2>6. Säilytys</h2>
+<p>Pelin edistyminen säilyy laitteessasi niin kauan kuin sovellus on asennettuna, ja se poistetaan,
+kun sovellus poistetaan; sen pilvikopio säilyy Google-tililläsi, kunnes poistat sen
+Google Play Peleistä. Pelaajanimesi, pisteesi ja kaverisuhteesi säilytetään niin kauan kuin
+tulostaulukot ovat käytössä tai kunnes pyydät niiden poistamista (kohta 8). Googlen käsittelemät
+tiedot säilytetään sen käytännöissä ilmoitettujen aikojen ajan.</p>
+
+<h2>7. Alaikäiset</h2>
+<p>Swarmline on tarkoitettu <strong>13 vuotta täyttäneille</strong>, eikä se tietoisesti kerää
+tietoja tätä nuoremmilta. Jos havaitset, että alle 13-vuotias on antanut henkilötietoja
+sovelluksen kautta, kirjoita yhteysosoitteeseen, jotta tiedot voidaan poistaa.</p>
+
+<h2 id="borrado">8. Oikeutesi ja tietojesi poistaminen</h2>
+<p>Voit käyttää oikeuttasi saada pääsy tietoihin, oikaista tai poistaa ne, rajoittaa niiden
+käsittelyä, vastustaa käsittelyä ja siirtää tiedot järjestelmästä toiseen sekä peruuttaa
+suostumuksesi milloin tahansa.</p>
+<ul>
+  <li><strong>Pelaajanimi:</strong> voit vaihtaa sen milloin tahansa pelin
+    tulostaulukkonäkymässä (KAVERIT &gt; VAIHDA).</li>
+  <li><strong>Kaverisuhteet:</strong> voit poistaa, hylätä tai perua ne samassa näkymässä.</li>
+  <li><strong>Tulostaulukoihin tallennetut pisteet, nimi ja kaverisuhteet:</strong> kirjoita osoitteeseen
+    <strong>sakepalace.apps@gmail.com</strong> ja ilmoita kaverikoodisi (se näkyy
+    tulostaulukkonäkymässä), niin tiedot poistetaan enintään 30 päivän kuluessa. Pelin ei tarvitse
+    olla asennettuna.</li>
+  <li><strong>Pilveen tallennettu edistyminen ja kirjautuminen:</strong> ne poistetaan tai yhteys
+    puretaan Google Play Pelien asetuksista.</li>
+  <li><strong>Mainonta:</strong> tarkista tai peruuta suostumuksesi pelin kohdassa ASETUKSET &gt; TIETOSUOJA
+    ja nollaa tai poista mainostunnus Androidin asetuksista.</li>
+  <li><strong>Laitteessa olevat tiedot:</strong> ne poistetaan tyhjentämällä sovelluksen tiedot tai
+    poistamalla sovellus.</li>
+</ul>
+<p>Jos katsot, ettei käsittely ole lainsäädännön mukaista, voit tehdä valituksen
+Espanjan tietosuojaviranomaiselle
+(<a href="https://www.aepd.es" rel="noopener" target="_blank">www.aepd.es</a>) tai asuinmaasi
+valvontaviranomaiselle.</p>
+
+<h2>9. Kalifornian asukkaat</h2>
+<p>Jos asut Kaliforniassa, CCPA antaa sinulle oikeuden tietää, mitä henkilötietoja kerätään,
+pyytää niiden poistamista, oikaista ne ja olla joutumatta syrjityksi näiden oikeuksien
+käyttämisen vuoksi. <strong>Kehittäjä ei myy henkilötietoja.</strong> Sitä, että Google AdMob
+käyttää mainostunnusta, voidaan CCPA:n mukaan pitää ”jakamisena” mainontatarkoituksiin;
+voit kieltää sen pelin kohdassa ASETUKSET &gt; TIETOSUOJA. Muiden oikeuksien
+osalta kirjoita edellä ilmoitettuun yhteysosoitteeseen.</p>
+
+<h2>10. Tietoturva</h2>
+<p>Pelitiedot sijaitsevat yksityisessä tallennustilassa, jonka käyttöjärjestelmä varaa
+sovellukselle ja joka on eristetty muista sovelluksista. Kaikki pelin tietoliikenne kulkee salattuna
+(HTTPS). Tulostaulukoiden tietokantaa ei voi lukea eikä siihen voi kirjoittaa suoraan: peli voi
+käyttää vain tarvitsemiaan yksittäisiä toimintoja, eikä tietokantaan tallenneta sähköpostiosoitteita,
+salasanoja eikä oikeita nimiä.</p>
+
+<h2>11. Tämän tietosuojakäytännön muutokset</h2>
+<p>Kaikki muutokset julkaistaan tässä samassa osoitteessa, ja ylätunnisteen päivämäärä päivitetään.
+Jos muutos vaikuttaa kerättäviin tietoihin, siitä ilmoitetaan sovelluksessa, ja suostumustasi
+pyydetään uudelleen, kun lainsäädäntö sitä edellyttää.</p>
+<p>Tämä tietosuojakäytäntö julkaistaan Euroopan unionin virallisilla kielillä. Espanjankielinen versio on
+alkuperäinen; jos jokin käännös poikkeaa siitä, espanjankielinen versio on ensisijainen.</p>
+
+<footer>
+  Swarmline — <code>io.swarmline.game</code><br>
+  Yhteystiedot: sakepalace.apps@gmail.com
+</footer>
+
+</body>
+</html>

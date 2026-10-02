@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adatkezelési tájékoztató — Swarmline</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0 auto; padding: 32px 20px 96px; max-width: 46rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #1a1a1a; background: #ffffff;
+  }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 8px; border-top: 2px solid #e6e4e4; padding-top: 16px; }
+  h3 { font-size: 1rem; margin: 24px 0 4px; }
+  .meta { color: #5f5c5c; font-size: 0.9rem; margin: 0 0 32px; }
+  ul { padding-inline-start: 1.2rem; }
+  li { margin: 4px 0; }
+  a { color: #c4341a; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.94rem; }
+  th, td { text-align: start; padding: 8px 10px; border-bottom: 1px solid #e6e4e4; vertical-align: top; }
+  th { background: #f6f5f5; font-weight: 600; }
+  .nota { background: #f6f5f5; border-inline-start: 3px solid #c4341a; padding: 12px 14px; margin: 16px 0; }
+  .langs { font-size: 0.85rem; line-height: 2; margin: 0 0 28px; padding-bottom: 12px; border-bottom: 1px solid #e6e4e4; }
+  .langs a, .langs strong { margin-inline-end: 12px; white-space: nowrap; }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 2px solid #e6e4e4; color: #5f5c5c; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<!--LANGBAR-->
+<nav class="langs" aria-label="Languages">
+  <a href="privacy-bg.html" hreflang="bg" lang="bg">Български</a>
+  <a href="privacy-cs.html" hreflang="cs" lang="cs">Čeština</a>
+  <a href="privacy-da.html" hreflang="da" lang="da">Dansk</a>
+  <a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a>
+  <a href="privacy-el.html" hreflang="el" lang="el">Ελληνικά</a>
+  <a href="privacy-en.html" hreflang="en" lang="en">English</a>
+  <a href="privacidad.html" hreflang="es" lang="es">Español</a>
+  <a href="privacy-et.html" hreflang="et" lang="et">Eesti</a>
+  <a href="privacy-fi.html" hreflang="fi" lang="fi">Suomi</a>
+  <a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a>
+  <a href="privacy-ga.html" hreflang="ga" lang="ga">Gaeilge</a>
+  <a href="privacy-hr.html" hreflang="hr" lang="hr">Hrvatski</a>
+  <strong lang="hu">Magyar</strong>
+  <a href="privacy-it.html" hreflang="it" lang="it">Italiano</a>
+  <a href="privacy-lt.html" hreflang="lt" lang="lt">Lietuvių</a>
+  <a href="privacy-lv.html" hreflang="lv" lang="lv">Latviešu</a>
+  <a href="privacy-mt.html" hreflang="mt" lang="mt">Malti</a>
+  <a href="privacy-nl.html" hreflang="nl" lang="nl">Nederlands</a>
+  <a href="privacy-pl.html" hreflang="pl" lang="pl">Polski</a>
+  <a href="privacy-pt.html" hreflang="pt" lang="pt">Português</a>
+  <a href="privacy-ro.html" hreflang="ro" lang="ro">Română</a>
+  <a href="privacy-sk.html" hreflang="sk" lang="sk">Slovenčina</a>
+  <a href="privacy-sl.html" hreflang="sl" lang="sl">Slovenščina</a>
+  <a href="privacy-sv.html" hreflang="sv" lang="sv">Svenska</a>
+  <a href="privacy-nb.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+  <a href="privacy-is.html" hreflang="is" lang="is">Íslenska</a>
+  <a href="privacy-pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+  <a href="privacy-ru.html" hreflang="ru" lang="ru">Русский</a>
+  <a href="privacy-uk.html" hreflang="uk" lang="uk">Українська</a>
+  <a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a>
+  <a href="privacy-ja.html" hreflang="ja" lang="ja">日本語</a>
+  <a href="privacy-ko.html" hreflang="ko" lang="ko">한국어</a>
+  <a href="privacy-zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+  <a href="privacy-zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+  <a href="privacy-id.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+  <a href="privacy-vi.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+  <a href="privacy-ms.html" hreflang="ms" lang="ms">Bahasa Melayu</a>
+  <a href="privacy-fil.html" hreflang="fil" lang="fil">Filipino</a>
+  <a href="privacy-th.html" hreflang="th" lang="th">ไทย</a>
+  <a href="privacy-hi.html" hreflang="hi" lang="hi">हिन्दी</a>
+  <a href="privacy-ar.html" hreflang="ar" lang="ar">العربية</a>
+  <a href="privacy-he.html" hreflang="he" lang="he">עברית</a>
+</nav>
+<!--/LANGBAR-->
+
+<h1>A Swarmline adatkezelési tájékoztatója</h1>
+<p class="meta">
+  Alkalmazás: <strong>Swarmline</strong> (<code>io.swarmline.game</code>)<br>
+  Adatkezelő: <strong>Raúl Garrido</strong><br>
+  Kapcsolat: <strong>sakepalace.apps@gmail.com</strong><br>
+  Utolsó frissítés: <strong>2026. október 1.</strong>
+</p>
+
+<p>Ez a tájékoztató ismerteti, hogy a Swarmline milyen adatokat kezel, milyen célból, kikkel osztja meg
+azokat, és hogy Önt milyen jogok illetik meg ezekkel kapcsolatban.</p>
+
+<h2>1. Összefoglalás</h2>
+<div class="nota">
+  <ul>
+    <li>A Swarmline teljes egészében játszható <strong>fiók, regisztráció és internetkapcsolat nélkül</strong>. Az
+      előrehaladását a játék az Ön eszközén menti.</li>
+    <li>A játék <strong>kizárólag jutalmazott hirdetéseket</strong> jelenít meg (Google AdMob): hirdetés
+      csak akkor jelenik meg, ha Ön úgy dönt, hogy valamilyen előnyért cserébe megnézi.</li>
+    <li>Ha az eszközén van <strong>Google Play Játékok</strong>-profil, a játék azzal jelentkezik
+      be, hogy az előrehaladását a felhőbe mentse, valamint a <strong>ranglisták és a
+      barátok</strong> miatt. Ebben az esetben az Ön játékosneve és pontszámai a
+      többi játékos számára láthatók.</li>
+    <li>A Swarmline <strong>nem tartalmaz alkalmazáson belüli vásárlást</strong>, sem analitikai eszközöket, és a
+      fejlesztő nem értékesít személyes adatokat.</li>
+  </ul>
+</div>
+
+<h2>2. A kezelt adatok</h2>
+
+<h3>2.1 Játékbeli előrehaladás (az eszközön)</h3>
+<p>Az alkalmazás a saját privát tárhelyén, az Ön eszközén tárolja azokat az információkat, amelyek
+ahhoz szükségesek, hogy a játék megjegyezze az Ön előrehaladását: a feloldott hajókat, fegyvereket, rendszereket és modulokat,
+a játékbeli pénznemet, a rekordokat, a beállításokat (irányítás, hang, nyelv, színpaletta), valamint a folyamatban lévő
+menetet, ha félbehagyja.</p>
+<ul>
+  <li>Ezek az információk nem tartalmazzák az Ön valódi nevét, e-mail-címét vagy telefonszámát.</li>
+  <li>Az alkalmazás eltávolításakor vagy adatainak a rendszerbeállításokban történő törlésekor megszűnnek.</li>
+</ul>
+<p>A napi kihívás a dátumból származtatott véletlenszám-kezdőértéket használ, amelyet maga az eszköz számít ki.</p>
+
+<h3>2.2 Jutalmazott hirdetések (Google AdMob)</h3>
+<p>A hirdetés <strong>kizárólag jutalmazott</strong>: hirdetés csak akkor jelenik meg, ha
+Ön megnyom egy ezt jelző gombot, valamilyen játékon belüli előnyért cserébe. Nincsenek
+kötelező hirdetések, sem a menetek közötti teljes képernyős hirdetések, sem bannerek. A szolgáltató a
+<strong>Google AdMob</strong>, amelynek az alkalmazásba épített összetevője a hirdetések előkészítése és
+megjelenítése érdekében kapcsolódik a Google-hoz, és a következő adatokat kezelheti:</p>
+<table>
+  <tr><th>Adat</th><th>Cél</th></tr>
+  <tr><td>Az eszköz hirdetési azonosítója</td><td>Hirdetések kiválasztása és mérése, gyakoriságkorlátozás és csalásmegelőzés</td></tr>
+  <tr><td>Az eszköz technikai adatai (típus, operációs rendszer, nyelv, IP-cím és az abból megállapított hozzávetőleges ország)</td><td>A hirdetési formátum kompatibilitása, a hirdetés lokalizálása és a biztonság</td></tr>
+  <tr><td>A hirdetéssel való interakció (megjelenítések, végignézett hirdetések) és a hirdetési összetevő diagnosztikai adatai</td><td>Mérés, számlázás és hibajavítás</td></tr>
+</table>
+<p>Az Európai Gazdasági Térségben, az Egyesült Királyságban és Svájcban a játék a hirdetések bekapcsolása előtt
+a Google űrlapján (User Messaging Platform) keresztül kéri az Ön <strong>hozzájárulását</strong>,
+amelyet a játékon belül a
+<strong>BEÁLLÍTÁSOK &gt; ADATVÉDELEM</strong> menüpontban bármikor áttekinthet és visszavonhat. Ha nem adja meg, a
+megjelenő hirdetések nem lesznek személyre szabottak, vagy egyáltalán nem jelenik meg hirdetés; ha nincs megjeleníthető hirdetés, a
+játék az előnyt ettől függetlenül megadja. Ezen adatkezelés jogalapja a hozzájárulás
+(a GDPR 6. cikke (1) bekezdésének a) pontja). Az Amerikai Egyesült Államok saját adatvédelmi törvénnyel rendelkező államaiban ugyanez
+az űrlap lehetővé teszi, hogy Ön tiltakozzon adatainak hirdetési célú értékesítése vagy megosztása ellen.
+Arról, hogy a Google hogyan használja fel a hirdetési adatokat, itt tájékozódhat:
+<a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">policies.google.com/technologies/ads</a>.</p>
+<p>A hozzájárulástól függetlenül az Ön Android-eszköze lehetővé teszi a hirdetési azonosító visszaállítását vagy
+törlését a Beállítások &gt; Adatvédelem &gt; Hirdetések menüpontban.</p>
+
+<h3>2.3 Google Play Játékok: bejelentkezés és mentés a felhőbe</h3>
+<p>Ha az eszközén van Google Play Játékok-profil, a játék megnyitásakor azzal jelentkezik be
+(vagy akkor, amikor Ön a ranglisták képernyőjén megnyomja a BEJELENTKEZÉS gombot). Bejelentkezett állapotban:</p>
+<ul>
+  <li>a játék megkapja a Google-tól az Ön Play Játékok-beli <strong>játékosazonosítóját</strong> és <strong>játékosnevét</strong>
+    (az e-mail-címét és a valódi nevét nem kapja meg);</li>
+  <li>az előrehaladását (a 2.1. pontban leírtakat) a játék a <strong>Saved Games</strong> szolgáltatásba menti, az Ön
+    Google-fiókjába, hogy az elérhető legyen az eszközei között.</li>
+</ul>
+<p>Ezt az adatkezelést a Google végzi, a
+<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Adatvédelmi irányelveinek</a> megfelelően.
+A Google Play Játékok beállításaiban kikapcsolhatja az automatikus bejelentkezést, leválaszthatja a játékot a fiókjáról, vagy törölheti
+mentett játékadatait. Bejelentkezés nélkül a játék továbbra is
+teljes mértékben játszható, és sem ez a pont, sem a következő nem alkalmazandó.</p>
+
+<h3 id="clasificaciones">2.4 Ranglisták, játékosnév és barátok</h3>
+<p>A játék ranglistáit, a megjelenített neveket és a barátságokat a fejlesztő saját
+adatbázisa tárolja, amelyet az Európai Unióban a <strong>Supabase</strong>
+(Supabase, Inc.) üzemeltet adatfeldolgozóként. A játék kizárólag akkor küldi el és tárolja ott az alábbiakat, ha Ön bejelentkezett
+(2.3. pont):</p>
+<table>
+  <tr><th>Adat</th><th>Cél</th></tr>
+  <tr><td>Az Ön Play Játékok-beli játékosazonosítója</td><td>Az Ön pontszámainak megkülönböztetése a többiekétől. Ez egyben az Ön <strong>barátkódja</strong> is</td></tr>
+  <tr><td>Az Ön játékosneve: a Play Játékokban használt név vagy – ha úgy kívánja – egy saját név, amelyet a játékban ad meg (3–15 betű, számjegy vagy aláhúzásjel, sértő szavak nélkül)</td><td>Az Ön megjelenítése a ranglistákon és a barátkérelmekben</td></tr>
+  <tr><td>Az Ön egyes napokon elért legjobb pontszáma (kilövések és elért szint) a napi kihívásban és a normál menetekben, a dátummal együtt</td><td>A napi ranglisták, az örökranglista és az Ön helyezése a többi játékos között</td></tr>
+  <tr><td>Az Ön barátságai, valamint az Ön által küldött vagy kapott barátkérelmek</td><td>A barátlista és a barátok közötti ranglisták</td></tr>
+</table>
+<p><strong>Az Ön játékosneve, pontszáma és szintje bármely más játékos számára
+látható</strong> a ranglistákon, és onnan bármely játékos barátkérelmet küldhet
+Önnek, amelynek elfogadásáról vagy elutasításáról Ön dönt. A barátkódja csak akkor kerül megosztásra a játékon
+kívül, ha Ön úgy dönt, hogy kimásolja vagy elküldi. Az alkalmazás nem fér hozzá az Ön Google
+Play Játékok-beli barátlistájához, és semmilyen más szöveget nem kér Öntől.</p>
+<p>Mint minden internetes szolgáltatás esetében, a szerverek biztonsági okokból technikai jelleggel és ideiglenesen rögzítik
+azt az IP-címet, amelyről a játék kapcsolódik. Ezen adatkezelés jogalapja
+a játék Ön által használt online funkcióinak nyújtása (a GDPR 6. cikke (1) bekezdésének b) pontja). A
+bejelentkezés nélkül játszott menetek semmit sem küldenek ebbe az adatbázisba.</p>
+
+<h3>2.5 Terjesztés a Google Playen keresztül</h3>
+<p>A letöltést, a telepítést és adott esetben a tesztprogramokban való részvételt a
+Google Play kezeli, amely az adatokat saját irányelvei szerint kezeli. Lásd a
+<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Adatvédelmi irányelveit</a>.</p>
+
+<h3>2.6 Rendszerszintű hibajelentések</h3>
+<p>Ha Android-eszközének beállításaiban bekapcsolta a diagnosztikai adatok küldését, az
+operációs rendszer jelentéseket küldhet a Google-nak az alkalmazás összeomlásairól és hibáiról. A
+fejlesztő ezekhez kizárólag <strong>összesített és anonim</strong> formában fér hozzá a
+Google Play konzolján keresztül, anélkül hogy bármely felhasználót azonosítani tudná. Az alkalmazás nem tartalmaz
+semmilyen saját analitikai vagy hibajelentő eszközt. Ezt az adatküldést az
+eszköze beállításaiban kapcsolhatja ki.</p>
+
+<h2>3. A jövőbeli verziókban tervezett szolgáltatások</h2>
+<p>A tervek szerint a játék során már most is megszerezhető <strong>teljesítmények</strong> a Google Play Játékokban
+is megjelennek majd. Ha erre sor kerül, a Google ezeket a teljesítményeket az Ön Play Játékok-profiljához kapcsolva kezeli, ez a
+tájékoztató pedig – a dátum feltüntetésével – még az új verzió közzététele előtt frissülni fog.</p>
+
+<h2>4. Kikkel kerülnek megosztásra az adatok</h2>
+<p>A fejlesztő személyes adatokat nem ad el, nem ad bérbe és nem ad át harmadik félnek. A leírt adatokat
+kizárólag az alábbiak kezelik:</p>
+<ul>
+  <li>a <strong>Google</strong> (AdMob, Google Play Játékok és Google Play), esettől függően adatkezelőként vagy adatfeldolgozóként,
+    az egyes pontokban hivatkozott irányelvek szerint;</li>
+  <li>a <strong>Supabase</strong>, a ranglisták, a nevek és a barátságok adatbázisát
+    üzemeltető adatfeldolgozóként (2.4. pont);</li>
+  <li><strong>a többi játékos</strong>, akik a ranglistákon látják az Ön játékosnevét, pontszámát és
+    szintjét.</li>
+</ul>
+
+<h2>5. Nemzetközi adattovábbítás</h2>
+<p>A ranglisták adatbázisa az Európai Unióban található. A Google és a Supabase az Európai Gazdasági
+Térségen kívül található szervereken is kezelhet adatokat, az Európai Bizottság megfelelőségi
+határozatai vagy általános szerződési feltételek alapján.</p>
+
+<h2>6. Megőrzés</h2>
+<p>A játékbeli előrehaladás mindaddig az Ön eszközén marad, amíg az alkalmazás telepítve van, és az alkalmazás
+eltávolításakor törlődik; a felhőbeli másolata az Ön Google-fiókjában marad mindaddig, amíg Ön nem törli a
+Google Play Játékokból. Az Ön játékosnevének, pontszámainak és barátságainak megőrzése addig tart, amíg a
+ranglisták működnek, vagy amíg Ön nem kéri a törlésüket (8. pont). A Google által kezelt
+adatok megőrzése a Google irányelveiben megjelölt ideig tart.</p>
+
+<h2>7. Kiskorúak</h2>
+<p>A Swarmline a <strong>13. életévüket betöltött</strong> személyeknek szól, és tudatosan nem gyűjt
+adatokat ennél fiatalabb kiskorúaktól. Ha azt észleli, hogy egy 13 év alatti kiskorú személyes
+adatokat adott meg az alkalmazáson keresztül, írjon a kapcsolattartási címre az adatok törlése érdekében.</p>
+
+<h2 id="borrado">8. Az Ön jogai és adatainak törlése</h2>
+<p>Ön gyakorolhatja a hozzáféréshez, a helyesbítéshez, a törléshez, az adatkezelés korlátozásához, a tiltakozáshoz és
+az adathordozhatósághoz való jogát, valamint hozzájárulását bármikor visszavonhatja.</p>
+<ul>
+  <li><strong>Játékosnév:</strong> bármikor megváltoztathatja a játék
+    ranglistaképernyőjén (BARÁTOK &gt; MÓDOSÍTÁS).</li>
+  <li><strong>Barátságok:</strong> ugyanezen a képernyőn távolíthatja el, utasíthatja el vagy vonhatja vissza őket.</li>
+  <li><strong>A ranglistákon tárolt pontszámok, név és barátságok:</strong> írjon a
+    <strong>sakepalace.apps@gmail.com</strong> címre a barátkódja megadásával (ezt a
+    ranglistaképernyő mutatja), és az adatok legfeljebb 30 napon belül törlésre kerülnek. Ehhez nem szükséges,
+    hogy a játék telepítve maradjon.</li>
+  <li><strong>Felhőbeli előrehaladás és bejelentkezés:</strong> a Google Play Játékok beállításaiban
+    törölhetők, illetve választhatók le.</li>
+  <li><strong>Hirdetések:</strong> hozzájárulását a játékon belül a BEÁLLÍTÁSOK &gt; ADATVÉDELEM menüpontban tekintheti át
+    vagy vonhatja vissza, a hirdetési azonosítót pedig az Android beállításaiban állíthatja vissza vagy törölheti.</li>
+  <li><strong>Az eszközön tárolt adatok:</strong> az alkalmazás adatainak törlésével vagy
+    az alkalmazás eltávolításával szűnnek meg.</li>
+</ul>
+<p>Ha úgy ítéli meg, hogy az adatkezelés nem felel meg a jogszabályoknak, panaszt nyújthat be
+a spanyol adatvédelmi hatósághoz
+(<a href="https://www.aepd.es" rel="noopener" target="_blank">www.aepd.es</a>) vagy a lakóhelye szerinti
+ország felügyeleti hatóságához.</p>
+
+<h2>9. Kaliforniai lakosok</h2>
+<p>Ha Ön Kaliforniában él, a CCPA biztosítja Önnek azt a jogot, hogy megtudja, milyen személyes információkat
+gyűjtenek Önről, hogy kérje azok törlését, hogy helyesbítse azokat, valamint hogy e jogok gyakorlása miatt ne érje hátrányos
+megkülönböztetés. <strong>A fejlesztő nem értékesít személyes információkat.</strong> A hirdetési
+azonosító Google AdMob általi használata a CCPA értelmében hirdetési célú „megosztásnak”
+minősülhet; ez ellen a játékon belül a BEÁLLÍTÁSOK &gt; ADATVÉDELEM menüpontban tiltakozhat. A többi
+jog gyakorlásához írjon a fent megadott kapcsolattartási címre.</p>
+
+<h2>10. Biztonság</h2>
+<p>A játékadatok abban a privát tárhelyben találhatók, amelyet az operációs rendszer az
+alkalmazás számára tart fenn, a többi alkalmazástól elkülönítve. A játék minden kommunikációja titkosítva
+(HTTPS) történik. A ranglisták adatbázisa nem teszi lehetővé a közvetlen olvasást és írást: a játék
+kizárólag azokat a konkrét műveleteket használhatja, amelyekre szüksége van, és az adatbázisban sem e-mail-cím, sem jelszó,
+sem valódi név nem tárolódik.</p>
+
+<h2>11. A tájékoztató módosításai</h2>
+<p>Minden módosítás ugyanezen a címen kerül közzétételre, a fejlécben szereplő dátum frissítésével.
+Ha a változás a gyűjtött adatokat érinti, arról az alkalmazáson belül értesítés jelenik meg, és ha a
+jogszabályok megkövetelik, a játék ismét kérni fogja az Ön hozzájárulását.</p>
+<p>Ez a tájékoztató az Európai Unió hivatalos nyelvein kerül közzétételre. A spanyol nyelvű változat az
+eredeti; ha valamely fordítás eltér tőle, a spanyol nyelvű változat az irányadó.</p>
+
+<footer>
+  Swarmline — <code>io.swarmline.game</code><br>
+  Kapcsolat: sakepalace.apps@gmail.com
+</footer>
+
+</body>
+</html>
